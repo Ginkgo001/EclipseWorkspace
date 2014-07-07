@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout android:background="#E6EAE9"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@+id/statusText"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent" android:padding="4dip"
+        android:textColor="#FF0000" android:textSize="24sp"/>
+    <RelativeLayout android:layout_height="fill_parent" android:layout_width="fill_parent">
+        <WebView android:id="@+id/webView"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" android:layout_width="fill_parent" android:visibility="visible"/>
+    </RelativeLayout>
+    <GridView android:columnWidth="90dp" android:gravity="center"
+        android:horizontalSpacing="10dp" android:id="@+id/toolsView"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent" android:numColumns="4"
+        android:stretchMode="columnWidth" android:verticalSpacing="10dp"
+        android:visibility="invisible" xmlns:android="http://schemas.android.com/apk/res/android"/>
+</FrameLayout>

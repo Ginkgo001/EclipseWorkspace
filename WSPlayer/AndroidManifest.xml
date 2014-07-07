@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest android:versionCode="1" android:versionName="1.0"
+    package="cn.lois.video.wsplayer" xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:icon="@drawable/icon"
+        android:label="@string/app_name" android:debuggable="true">
+        <activity android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name" android:name=".WSPlayer" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|keyboardHidden"
+            android:name=".LocalRecordList" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|keyboardHidden" android:name=".LocalPlayer" android:screenOrientation="landscape"/>
+        <activity android:configChanges="orientation|keyboardHidden" android:name=".OnlinePlayer" android:screenOrientation="landscape"/>
+        <activity android:configChanges="orientation|keyboardHidden" android:name=".RecordPlayer" android:screenOrientation="landscape"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+</manifest>
